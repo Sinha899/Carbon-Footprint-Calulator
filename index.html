@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="https://www.pinclipart.com/picdir/big/38-385403_clouds-clipart-polluted-carbon-dioxide-png-transparent-png.png">
+    <script src="home.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Carbon Footprint Calculator</h1>
+        <p id="subnote">Calculate your carbon footprint based on your lifestyle habits!</p>
+        <form onsubmit="carbon(event)">
+            <label>Electricity Usage (kWh/month):</label><br>
+            <input type="number" required id="electricity"><br><br>
+            <label>Fuel Usage (Liters/month):</label><br>
+            <input type="number" required id="fuel"><br><br>
+            <label>Flights Taken (per year)</label><br>
+            <input type="number" required id="flights"><br><br>
+<label>Meat Consumption (times/week)</label><br>
+            <input type="number" required id="meat"><br><br>
+            <button type="submit">Calculate Footprint</button>
+        </form>
+        <h2 id="display"></h2>
+    </div>
+</body>
+</html>
